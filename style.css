@@ -1,0 +1,14 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+    display: table;
+    margin: auto;
+}
+
+#dados{
+    text-align: center;
+    color: pink;
+}

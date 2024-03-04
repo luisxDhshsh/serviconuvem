@@ -5,23 +5,21 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
 </head>
 <body>
-
+   
+    <div class="main"><h1 style="text-align: center;">Digite seu CEP</h1>
+        <br><br>
+        
         <input name="pesquisaCep" id="pesquisaCep" type="number"/>
-        <input type="button" value="Buscar no Via CEP" onclick="buscarEnderecoNoViaCEP()"/>
+            <input type="button" value="Buscar no Via CEP" onclick="pesquisacep()"/>
+            <div id="dados"></div>
+        <br>
     </form>
-    
+    </div>
+ 
+
 </body>
 </html>
-
-
-<script>
-    function buscarEnderecoNoViaCEP(){
-        componentePesquisaCep = document.getElementById("pesquisaCep");
-        alert("O cep digitado é:" + componentePesquisaCep.value);
-        alert("Funcionou o click no botão buscar!");
-    }
-</script>
